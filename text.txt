@@ -1,0 +1,8 @@
+1) npm init -y      //install package.json file
+2) npm install json-server@0
+    json-server --watch db.json --port 4000   //server path connect
+
+3) create db.json file and add data
+4) "start": "json-server --watch db.json --port 4000"    //add watch path
+
+5) npm run start    //check its working

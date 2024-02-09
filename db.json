@@ -1,0 +1,55 @@
+{
+  "teachers": [
+    {
+      "id": "1",
+      "name": "John Doe",
+      "age": 25,
+      "sub": "Science"
+    },
+    {
+      "id": "3",
+      "name": "Ganesh maze",
+      "age": 22,
+      "sub": "Science"
+    },
+    {
+      "id": "4",
+      "name": "Sachin Dhavle",
+      "age": 50,
+      "sub": "English"
+    },
+    {
+      "id": "5",
+      "name": "Vidyut Katade",
+      "age": 40,
+      "sub": "English"
+    },
+    {
+      "id": "6",
+      "name": "Gautam mane",
+      "age": 44
+    },
+    {
+      "name": "Shrikan mane",
+      "age": 44,
+      "id": "KlHw9Dw"
+    }
+  ],
+  "students": [
+    {
+      "id": "1",
+      "name": "Kane samar",
+      "age": 30
+    },
+    {
+      "id": "2",
+      "name": "wayn george",
+      "age": 18
+    },
+    {
+      "id": "3",
+      "name": "Samrat",
+      "age": 20
+    }
+  ]
+}

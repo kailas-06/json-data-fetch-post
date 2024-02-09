@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Localhost json server</title>
+    <style>
+        .table {
+            width: 100%;
+            border: 1px solid #000;
+            border-collapse: collapse;
+        }
+
+        .table th {
+            text-align: left;
+        }
+
+        .table th,
+        .table td {
+            border: 1px solid #000;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Localhost json server</h1>
+    <div class="container">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Subject</th>
+                </tr>
+            </thead>
+            <tbody id="teachers-data">
+                <!-- <tr>
+                    <td>
+                        <ol id="teachers-data">
+
+                        </ol>
+                    </td>
+                </tr> -->
+
+
+
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+
+        fetch("http://localhost:4000/teachers")
+            .then((response) => {
+                return response.json()
+            })
+            .then((data) => {
+                console.log(data);
+                document.getElementById("teachers-data").innerHTML = data.map((teachers, index) =>
+
+                    ` <tr>
+                    <td>${index + 1}</td>
+                    <td>${teachers.name}</td>
+                    <td>${teachers.age}</td>
+                    <td>${teachers.sub}</td>
+                </tr>
+                    `
+                ).join(" ")
+            }).catch((error) => console.log(error))
+    </script>
+
+</body>
+
+</html>
